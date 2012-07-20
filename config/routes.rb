@@ -1,11 +1,10 @@
 Wegroup::Application.routes.draw do
-  get "pages/home"
 
-  get "pages/bcast"
-
-  get "pages/about"
-
-  get "pages/help"
+  root :to => 'pages#home'
+  
+  match '/help',    to: 'pages#help'
+  match '/about',   to: 'pages#about'
+  match '/bcast',   to: 'pages#bcast'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
