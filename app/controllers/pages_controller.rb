@@ -2,9 +2,12 @@ class PagesController < ApplicationController
   def home
   end
 
-  def bcast
+  def groups
   end
 
+  def contact
+  end  
+  
   def about
   end
 

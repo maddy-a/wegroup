@@ -1,2 +1,32 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="row">
+  <div class="hero-unit span7">
+    <h1>Welcome to WeGroup</h1>
+
+    <h2>
+      This is the home page for the
+      <a href='http://wegroup.herokuapp.com'>WeGroup</a>
+      application.
+    </h2>
+  </div>
+  
+
+  <div class="pull-right span3 signinup">
+    <%= form_for(:session, url: sessions_path) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+    <% end %>
+	
+	<div class="signup">
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+   </div>
+  </div>
+
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://wegroup.herokuapp.com' %>
