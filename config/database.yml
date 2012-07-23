@@ -4,11 +4,11 @@ development:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: wegroup_dev
+  database: av_staging
   pool: 5
   timeout: 5000
-  username: rex
-  password: rexdb
+  username: ardhiview
+  password: 'ardhiview'
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -17,18 +17,18 @@ test:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: wegroup_test
+  database: av_staging
   pool: 5
   timeout: 5000
-  username: rex
-  password: rexdb
+  username: ardhiview
+  password: 'ardhiview'
 
 production:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: wegroup
+  database: av_staging
   pool: 5
   timeout: 5000
-  username: rex
-  password: rexdb
+  username: ardhiview
+  password: 'ardhiview'

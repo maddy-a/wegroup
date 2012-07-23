@@ -5,6 +5,7 @@ gem 'pg', '0.12.2'
 gem 'bootstrap-sass', '2.0.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'devise'
 
 group :development do
   #gem 'sqlite3', '1.3.5'
